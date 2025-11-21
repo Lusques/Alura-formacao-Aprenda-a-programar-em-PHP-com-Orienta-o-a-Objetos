@@ -1,0 +1,16 @@
+{
+  "name": "alura-formacao-aprenda-a-programar-em-php-com-orienta-o-a-objetos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:primeiro": "bash -lc 'OLD=; while true; do NEW=$(stat -c %Y primeiro-programa.php 2>/dev/null || echo 0); if [ \"$NEW\" != \"$OLD\" ]; then OLD=$NEW; php ./primeiro-programa.php; fi; sleep 1; done'",
+    "watch:primeiro:node": "node ./scripts/watch-primeiro.js",
+    "serve": "php -S localhost:8000 -t .",
+    "serve:index": "php -S localhost:8000 index.php"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
